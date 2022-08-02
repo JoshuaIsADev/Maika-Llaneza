@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Slab", serif;
+  line-height: 1.8;
+  background: white;
+  letter-spacing: 0.05rem;
+  padding-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  max-width: 1280px;
+  padding: 0rem 5rem;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+  flex-wrap: wrap;
+}
+
+.about-item {
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-item-photo {
+  max-width: 280px;
+  padding: 2rem;
+}
+
+.about-item-photo img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.writing-container {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.writing-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  margin-bottom: 70px;
+  padding: 1rem;
+}
+
+.writing-item img {
+  max-width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+a:hover {
+  border-color: #ccc;
+}
+a.current {
+  border-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 5rem;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0 0rem;
+}
+
+.navbar ul li {
+  padding: 0 2rem;
+}
+
+.text-title {
+  line-height: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.text-publication {
+  line-height: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+
+.text-info {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 600;
+  color: rgb(100, 100, 100);
+}
+
+.text-about {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(100, 100, 100);
+}
+
+.text-section {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.contact-item {
+  padding: 0 0.5rem;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 1rem;
+}
