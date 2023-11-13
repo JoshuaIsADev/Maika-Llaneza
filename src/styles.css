@@ -37,11 +37,18 @@ h4,
   font-family: 'Noto Serif Display', serif;
 }
 
-h1,
-.writings-title {
-  font-size: clamp(5rem, 5lvw, 10.1rem);
+h1 {
+  font-size: clamp(5rem, 7lvw, 14.1rem);
   font-weight: 200;
-  line-height: clamp(5rem, 5lvw, 10.1rem);
+  line-height: clamp(5rem, 7lvw, 14.1rem);
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.writings-title {
+  font-size: clamp(4rem, 5lvw, 10.1rem);
+  font-weight: 200;
+  line-height: clamp(4rem, 5lvw, 10.1rem);
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 }
@@ -74,10 +81,10 @@ h4 {
 
 p {
   font-family: 'Noto Serif', serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.11rem;
   text-align: left;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -331,6 +338,7 @@ hr {
 
 @media screen and (max-width: 1024px) {
   p {
+    font-size: 1.4rem;
     line-height: 2rem;
   }
 
@@ -374,9 +382,9 @@ hr {
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.12rem;
   }
 
   .ux-experience-title {
@@ -475,8 +483,9 @@ hr {
     padding: 0;
   }
 
+  .writings-publisher,
   .writings-info {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
@@ -489,6 +498,11 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 200;
+  }
+
   .ux-work-container {
     display: flex;
     flex-direction: column;
@@ -501,10 +515,9 @@ hr {
     gap: 0rem;
   }
 
-  h1,
   .writings-title {
-    font-size: clamp(3.5rem, 5lvw, 10.1rem);
+    font-size: clamp(3rem, 5lvw, 10.1rem);
     font-weight: 300;
-    line-height: clamp(3.5rem, 5lvw, 10.1rem);
+    line-height: clamp(3rem, 5lvw, 10.1rem);
   }
 }

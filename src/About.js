@@ -6,8 +6,7 @@ function About() {
     <section id='about' className='container'>
       <div className='container-70'>
         <h1 className='headline'>
-          Kidlit Author of Monster Protags, UX Architect Candidate, and Book
-          Weirdo
+          Kidlit Author of Monster Protags and Book Weirdo
         </h1>
         <Summary
           title='About'

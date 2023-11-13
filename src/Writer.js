@@ -14,7 +14,7 @@ function Writer() {
         <div>
           <Writings
             title='Uneasy Rider'
-            publisher='Inheritance Magazine'
+            publisher='Luminary Podcast'
             info='Oct 7, 2021'
             url='https://luminarypodcasts.com/listen/snap-judgment/snap-judgment-presents-spooked/uneasy-rider/5ab95815-861b-4ef8-b880-2f656955db45?country=US/'
           />
@@ -23,12 +23,6 @@ function Writer() {
             publisher='Inheritance Magazine'
             info='Oct 7, 2021'
             url='https://www.inheritancemag.com/stories/tale-of-two-hauntings'
-          />
-          <Writings
-            title='Uplifted'
-            publisher='Healing The Unknown'
-            info='Apr 1, 2020'
-            url=''
           />
           <Writings
             title='Comfortable In My Own Skin'
@@ -41,12 +35,6 @@ function Writer() {
             publisher='Stories with Sapphire Podcast'
             info='Jan 1, 2020'
             url='https://podcasts.apple.com/au/podcast/2-coincidence-featuring-derek-hayes-monsters-among-us/id1495941921?i=1000465357429'
-          />
-          <Writings
-            title='Filipina American Story Theology'
-            publisher='17th Biennial Filipino American National Historical Society'
-            info='Jul 1, 2019'
-            url=''
           />
           <Writings
             title='My Emerging Unapologetic Activism'
