@@ -348,12 +348,6 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-  #about,
-  #writer,
-  .ux-work-container {
-    gap: 4rem;
-  }
-
   .footer-link-container {
     padding-left: 1rem;
   }
@@ -409,9 +403,13 @@ hr {
 }
 
 @media screen and (max-width: 700px) {
+  h2 {
+    padding-left: 0rem;
+  }
+
   .container {
     flex-direction: column;
-    padding: 0 2rem 0 2rem;
+    padding: 0rem 2rem 0 2rem;
     align-items: flex-start;
   }
 
@@ -424,19 +422,35 @@ hr {
     max-width: 100%;
   }
 
+  .summary-container {
+    margin-top: 5rem;
+  }
+
   .about-img {
     max-width: 350px;
     height: auto;
     object-fit: cover;
   }
 
+  header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  main {
+    padding-top: 12rem;
+  }
+
   #header-nav {
     width: 100%;
     max-width: 450px;
-    margin-top: 2lvh;
+    margin-top: 8.8rem;
+    padding: 2rem 0;
     margin-left: 2rem;
     padding-right: 4rem;
-    position: relative;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   #header-nav ul {
