@@ -320,6 +320,37 @@ hr {
   padding-top: 12rem;
 }
 
+.maintenance-container {
+  display: flex;
+  flex-direction: column;
+  width: 100lvw;
+  height: 100lvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintenance-p,
+.maintenance-link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.maintenance-link {
+  text-decoration: underline;
+}
+
+.maintenance-link:hover {
+  color: rgb(213, 213, 213);
+}
+
+.maintenance-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 4rem;
+}
+
 @media screen and (max-width: 1400px) {
   .headline {
     padding-bottom: 5rem;
