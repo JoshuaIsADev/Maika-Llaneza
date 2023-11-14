@@ -327,6 +327,7 @@ hr {
   height: 100lvh;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .maintenance-p,
@@ -334,6 +335,8 @@ hr {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
 }
 
 .maintenance-link {
