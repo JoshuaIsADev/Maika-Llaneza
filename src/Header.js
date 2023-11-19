@@ -1,8 +1,22 @@
 function Header() {
   return (
-    <header className='container'>
-      <h2>Maika</h2>
-      <h2>Llaneza</h2>
+    <header className='header-nav-container'>
+      <nav id='header-nav'>
+        <ul>
+          <li>
+            <a href='#'>About</a>
+          </li>
+          <li>
+            <a href='#writer'>Writings</a>
+          </li>
+          {/* <li>
+            <a href='#ux'>UX</a>
+          </li> */}
+          <li>
+            <a href='#contact'>Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

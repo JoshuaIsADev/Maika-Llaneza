@@ -9,8 +9,6 @@ body {
   font-family: 'Noto Serif', serif;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
-  width: 100lvw;
-  height: 100lvh;
   align-items: center;
   justify-content: center;
 }
@@ -20,35 +18,24 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  margin: auto;
-  width: 100lvw;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  z-index: 100;
-}
-
 h1,
 h2,
-h3,
-h4,
-.writings-title {
+h4 {
   font-family: 'Noto Serif Display', serif;
 }
 
 h1 {
-  font-size: clamp(5rem, 7lvw, 14.1rem);
-  font-weight: 200;
-  line-height: clamp(5rem, 7lvw, 14.1rem);
-  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 300;
+  line-height: 10rem;
+  letter-spacing: -0.8rem;
   color: rgba(0, 0, 0, 1);
 }
 
 .writings-title {
-  font-size: clamp(4rem, 5lvw, 10.1rem);
-  font-weight: 200;
-  line-height: clamp(4rem, 5lvw, 10.1rem);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 }
@@ -64,9 +51,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -86,7 +72,7 @@ p {
   line-height: 3rem;
   letter-spacing: 0.11rem;
   text-align: left;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
 }
 
 a {
@@ -102,10 +88,6 @@ hr {
   margin-left: 2rem;
 }
 
-.headline {
-  padding-bottom: 10rem;
-}
-
 .summary-title {
   margin-bottom: 3rem;
 }
@@ -114,10 +96,10 @@ hr {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 1800px;
-  padding: 0 4rem 0 12rem;
+  max-width: 1000px;
+  padding: 0 4rem;
   margin: auto;
 }
 
@@ -130,23 +112,31 @@ hr {
   max-width: 30%;
 }
 
-.summary-container {
-  padding-left: 15rem;
+.header-nav-container {
+  display: flex;
+  width: 100lvw;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HEADER */
 
 #header-nav {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  margin-top: 35lvh;
-  margin-left: 2rem;
+  max-width: 1000px;
+  padding: 0 4rem;
+  margin: auto;
   position: fixed;
+  justify-content: right;
 }
 
 #header-nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   gap: 2.4rem;
 }
@@ -185,11 +175,11 @@ hr {
 
 /* WRITER */
 
-.writings-container {
+/* .writings-container {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-}
+} */
 
 .writings {
   display: flex;
@@ -273,7 +263,7 @@ hr {
 .footer-link-container {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: right;
   align-items: flex-end;
   gap: 1rem;
   padding-left: 4.5rem;
@@ -283,15 +273,14 @@ hr {
 .footer-link {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
-  font-size: 2rem;
-  font-weight: 300;
-  min-height: 5rem;
-  min-width: 5rem;
-  border-radius: 5rem;
-  padding: 1rem;
-  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
   transition: 0.1s all ease-in-out;
+  border-radius: 4rem;
+  padding: 0.5rem 1.5rem 0.75rem;
+  margin-top: 3rem;
+  white-space: nowrap;
 }
 
 .footer-link:hover {
@@ -309,11 +298,10 @@ hr {
 #about,
 #writer {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 16rem;
+  gap: 10rem;
 }
 
+#about,
 #writer,
 #ux,
 #contact {
@@ -354,204 +342,110 @@ hr {
   padding-top: 4rem;
 }
 
-@media screen and (max-width: 1400px) {
-  .headline {
-    padding-bottom: 5rem;
-  }
-
-  #about,
-  #writer,
-  .ux-work-container {
-    gap: 8rem;
-  }
-
-  .footer-link-container {
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  p {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-
-  .summary-container {
-    padding-left: 5rem;
-  }
-
-  .writings {
-    padding: 2rem 0;
-    gap: 2rem;
-  }
-
-  hr {
-    padding-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .footer-link-container {
-    padding-left: 1rem;
-  }
-
-  #about,
-  #writer,
-  .ux-work-container {
-    gap: 2rem;
-  }
-
-  .summary-container {
-    padding-left: 0rem;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-    letter-spacing: 0.3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    letter-spacing: 0.12rem;
-  }
-
-  .ux-experience-title {
-    font-size: 1rem;
-    line-height: 2rem;
-  }
-
-  #header-nav a {
-    font-size: 1rem;
-    font-weight: 300;
-  }
-
-  .footer-link {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(0, 0, 0, 1);
-    font-size: 1.4rem;
-    font-weight: 300;
-    min-height: 4rem;
-    min-width: 4rem;
-    border-radius: 4rem;
-    padding: 1rem;
-    text-align: center;
-    transition: 0.1s all ease-in-out;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h2 {
-    padding-left: 0rem;
-  }
-
-  .container {
-    flex-direction: column;
-    padding: 0rem 2rem 0 2rem;
-    align-items: flex-start;
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 9rem;
+    line-height: 9rem;
   }
 
   .container-70 {
     width: 100%;
     max-width: 100%;
   }
+
   .container-30 {
     width: 100%;
     max-width: 100%;
   }
 
-  .summary-container {
-    margin-top: 5rem;
+  .footer-link-container {
+    justify-content: left;
+    padding-left: 0rem;
+    padding-bottom: 5rem;
   }
 
-  .about-img {
-    max-width: 350px;
-    height: auto;
-    object-fit: cover;
+  #about,
+  #writer,
+  #ux,
+  #contact {
+    padding-top: 6rem;
   }
+}
 
-  header {
-    position: fixed;
-    top: 0;
-    padding-bottom: 10rem;
-    background-color: rgba(255, 255, 255, 0.9);
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 2rem;
+    margin: auto;
   }
-
-  main {
-    padding-top: 12rem;
+  .header-nav-container {
+    display: flex;
+    height: 4rem;
+    align-items: flex-end;
   }
 
   #header-nav {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 9rem;
-    padding: 2rem 0 1rem 0;
-    margin-left: 2rem;
-    padding-right: 4rem;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 2rem;
+    justify-content: center;
   }
 
   #header-nav ul {
-    flex-direction: row;
     justify-content: space-between;
-    gap: 0rem;
+    width: 100%;
+  }
+
+  #about {
+    margin: 0;
+  }
+
+  #about,
+  #writer {
+    gap: 5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: -0.2rem;
   }
 
   .writings {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 2rem 0;
+    padding: 2rem 0 1rem 0;
     gap: 0rem;
   }
 
-  .writings-secondary {
-    width: 10rem;
-    padding: 0;
+  .writings-publisher {
+    padding-top: 1rem;
   }
 
-  .writings-publisher,
   .writings-info {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.6);
     text-align: left;
   }
 
+  .writings-publisher {
+    line-height: 1rem;
+  }
+
   .footer-link-container {
+    justify-content: left;
     padding-left: 0rem;
-    align-items: flex-end;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 200;
+    padding-bottom: 5rem;
   }
 
-  .ux-work-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+  #writer,
+  #ux,
+  #contact {
+    padding-top: 10rem;
   }
 
-  #writer {
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0rem;
-  }
-
-  .writings-title {
-    font-size: clamp(3rem, 5lvw, 10.1rem);
-    font-weight: 300;
-    line-height: clamp(3rem, 5lvw, 10.1rem);
+  .headline {
+    padding-bottom: 4rem;
   }
 }

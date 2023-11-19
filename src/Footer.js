@@ -9,18 +9,17 @@ function Footer() {
       </div>
       <div className='container-30 footer-link-container'>
         <a href='http://www.facebook.com/' className='footer-link'>
-          F
+          Facebook
         </a>
         <a
           href='https://www.instagram.com/maikallaneza/'
           className='footer-link'
         >
-          IG
+          Instagram
         </a>
         <a href='https://twitter.com/jarofdollheads' className='footer-link'>
-          X
+          X (Twitter)
         </a>
-        <hr />
       </div>
     </section>
   );
