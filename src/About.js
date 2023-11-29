@@ -6,7 +6,7 @@ function About() {
     <section id='about' className='container'>
       <div className='container-70'>
         <h3 className='summary-title'>Maika Llaneza</h3>
-        <h1 className='headline'>Kidlit Author of Monster and Mischief</h1>
+        <h1 className='headline'>Kidlit Author of Monsters and Mischief</h1>
       </div>
       <Summary
         title='About'
